@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="za.co.codetribe.ex1.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="@string/height"
+        style="@style/HeaderTextStyle"
+        android:id="@+id/textView2" />
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+        <EditText
+
+            android:hint="Height"
+            style="@style/HeaderTextStyle"
+            android:id="@+id/height" />
+
+        <TextView
+            android:text="@string/meter"
+            style="@style/HeaderTextStyle"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="348dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/radioGroup"
+                        android:onClick="onClick"
+                        android:gravity="left"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        >
+
+                        <TextView
+                            style="@style/HeaderTextStyle"
+                            android:text="@string/weight"
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/textView3" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0-50kg"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onClick"
+                        android:id="@+id/rdg1"
+                        android:layout_weight="1"
+                    />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="51-65kg"
+                        android:onClick="onClick"
+                        android:id="@+id/rdg2"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="0dp"
+
+                        />
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="66-80kg"
+                            android:onClick="onClick"
+                            android:id="@+id/rdg3"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"/>
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="81-100kg"
+                            android:onClick="onClick"
+                            android:id="@+id/rdg4"
+                            android:layout_marginLeft="250dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="101-150kg"
+                        android:onClick="onClick"
+                        android:id="@+id/rdg5"
+                        android:layout_weight="1"
+                    />
+
+                </RadioGroup>
+        </LinearLayout>
+
+    <Button
+        android:text="@string/categories"
+        style="@style/Button"
+        android:id="@+id/button"
+        android:layout_marginTop="60dp"
+        android:onClick="show"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="255dp" />
+
+</LinearLayout>

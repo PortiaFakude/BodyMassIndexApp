@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BMI CALCULATOR</string>
+    <string name="height">Please enter your height below</string>
+    <string name="meter">m</string>
+    <string name="weight">Please choose only one weight range</string>
+    <string name="categories">VIEW CATEGORIES</string>
+</resources>
